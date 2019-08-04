@@ -20,31 +20,77 @@ a {
 }
 #main-grid {
   display: grid;
-  grid-template-rows: 200px 200px;
-  grid-template-columns: 200px 200px;
+  grid-template-rows: 65px 300px 300px;
+  grid-template-columns: 300px 50px 300px;
 }
 .projects {
-  border: 1px solid #f9f9f9;
+  margin: 5%;
   color: #f9f9f9;
+  text-align: center;
 }
 #exoplanet {
-  grid-row: 1 / span 1;
+  grid-row: 2 / span 1;
   grid-column: 1 / span 1;
+  background: url("images/exoplanet.png");
+  background-size: cover;
+  /* background-position: center center; */
 }
 #simon {
-  grid-row: 1 / span 1;
-  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  grid-column: 3 / span 1;
+  background: url("images/simon.png");
+  background-size: cover;
+  /* background-position: center center; */
 }
 #comingsoon1 {
-  grid-row: 2 / span 1;
+  grid-row: 3 / span 1;
   grid-column: 1 / span 1;
+  border: 1px solid #f9f9f9;
 }
 #comingsoon2 {
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  grid-column: 3 / span 1;
+  border: 1px solid #f9f9f9;
 }
 @media only screen and (max-width: 480px) {
   .top-divs {
     margin: auto 5%;
+  }
+  .projects {
+    color: green;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .projects {
+    color: green;
+  }
+  #main-grid {
+    display: grid;
+    grid-template-rows: 75px 300px 300px 300px 300px;
+    grid-template-columns: 300px;
+  }
+  #exoplanet {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    background: url("images/exoplanet.png");
+    background-size: cover;
+    /* background-position: center center; */
+  }
+  #simon {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    background: url("images/simon.png");
+    background-size: cover;
+    /* background-position: center center; */
+  }
+  #comingsoon1 {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+    border: 1px solid #f9f9f9;
+  }
+  #comingsoon2 {
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 1;
+    border: 1px solid #f9f9f9;
   }
 }
