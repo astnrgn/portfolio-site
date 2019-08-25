@@ -18,11 +18,10 @@ a {
   display: flex;
   justify-content: center;
 }
-/* !!! add 300px to the end of grid-template-row !!! */
 #main-grid {
   display: grid;
-  grid-template-rows: 200px 300px;
-  grid-template-columns: 300px 50px 300px;
+  grid-template-rows: 75px 300px 50px 300px;
+  grid-template-columns: 300px 100px 300px;
 }
 .projects {
   margin: 5%;
@@ -51,26 +50,27 @@ a {
   border: 2px solid #f9f9f9;
   padding: 0 2% 0;
 }
-#exoplanet {
+#pinstagram500 {
   grid-row: 2 / span 1;
   grid-column: 1 / span 1;
+  background: url("images/pinstagram500.png");
+  background-size: cover;
+  background-position: center;
+}
+#exoplanet {
+  grid-row: 2 / span 1;
+  grid-column: 3 / span 1;
   background: url("images/exoplanet.png");
   background-size: cover;
 }
 #simon {
-  grid-row: 2 / span 1;
-  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 1;
   background: url("images/simon.png");
   background-size: cover;
 }
-#comingsoon1 {
-  grid-row: 3 / span 1;
-  grid-column: 1 / span 1;
-  border: 1px solid #f9f9f9;
-  display: none;
-}
 #comingsoon2 {
-  grid-row: 3 / span 1;
+  grid-row: 4 / span 1;
   grid-column: 3 / span 1;
   border: 1px solid #f9f9f9;
   display: none;
@@ -83,26 +83,28 @@ a {
 @media only screen and (max-width: 600px) {
   #main-grid {
     display: grid;
-    /* !!! add TWO 300px to the end of grid-template-row !!! */
-    grid-template-rows: 75px 300px 300px;
+    /* !!! add ONE 300px to the end of grid-template-row !!! */
+    grid-template-rows: 75px 300px 300px 300px;
     grid-template-columns: 300px;
   }
-  #exoplanet {
+  #pinstagram500 {
     grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    background: url("images/pinstagram500.png");
+    background-size: cover;
+    background-position: center;
+  }
+  #exoplanet {
+    grid-row: 3 / span 1;
     grid-column: 1 / span 1;
     background: url("images/exoplanet.png");
     background-size: cover;
   }
   #simon {
-    grid-row: 3 / span 1;
+    grid-row: 4 / span 1;
     grid-column: 1 / span 1;
     background: url("images/simon.png");
     background-size: cover;
-  }
-  #comingsoon1 {
-    grid-row: 4 / span 1;
-    grid-column: 1 / span 1;
-    border: 1px solid #f9f9f9;
   }
   #comingsoon2 {
     grid-row: 5 / span 1;
