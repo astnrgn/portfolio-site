@@ -1,0 +1,49 @@
+body {
+  background: #313639;
+  font-family: "Muli", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+.top-divs {
+  margin: auto 10%;
+}
+a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+#main-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.headshotImage {
+  background: url("../images/headshot.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 350px;
+}
+.information {
+  text-align: center;
+  color: #f9f9f9;
+  height: 350px;
+  width: 350px;
+}
+@media only screen and (max-width: 600px) {
+  .top-divs {
+    margin: auto 5%;
+  }
+  .headshotImage {
+    height: 300px;
+    width: 300px;
+  }
+  .information {
+    font-size: 15px;
+  }
+}
