@@ -53,20 +53,20 @@ a {
 #pinstagram500 {
   grid-row: 2 / span 1;
   grid-column: 1 / span 1;
-  background: url("../images/pinstagram500.png");
+  background: url("./images/pinstagram500.png");
   background-size: cover;
   background-position: center;
 }
 #exoplanet {
   grid-row: 2 / span 1;
   grid-column: 3 / span 1;
-  background: url("../images/exoplanet.png");
+  background: url("./images/exoplanet.png");
   background-size: cover;
 }
 #simon {
   grid-row: 4 / span 1;
   grid-column: 1 / span 1;
-  background: url("../images/simon.png");
+  background: url("./images/simon.png");
   background-size: cover;
 }
 #comingsoon2 {

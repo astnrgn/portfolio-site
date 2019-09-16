@@ -22,7 +22,7 @@ a {
   margin-top: 5%;
 }
 .headshotImage {
-  background: url("../images/headshot.jpg");
+  background: url("./images/headshot.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
