@@ -50,12 +50,13 @@ a {
   border: 2px solid #f9f9f9;
   padding: 0 2% 0;
 }
-#pinstagram500 {
+#fourthRock {
   grid-row: 2 / span 1;
   grid-column: 1 / span 1;
-  background: url("./images/pinstagram500.png");
+  background: url("./images/fourthRock.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 #exoplanet {
   grid-row: 2 / span 1;
@@ -63,17 +64,18 @@ a {
   background: url("./images/exoplanet.png");
   background-size: cover;
 }
-#simon {
+#pinstagram500 {
   grid-row: 4 / span 1;
   grid-column: 1 / span 1;
-  background: url("./images/simon.png");
+  background: url("./images/pinstagram500.png");
   background-size: cover;
+  background-position: center;
 }
-#comingsoon2 {
+#simon {
   grid-row: 4 / span 1;
   grid-column: 3 / span 1;
-  border: 1px solid #f9f9f9;
-  display: none;
+  background: url("./images/simon.png");
+  background-size: cover;
 }
 @media only screen and (max-width: 600px) {
   .top-divs {
@@ -83,32 +85,23 @@ a {
 @media only screen and (max-width: 600px) {
   #main-grid {
     display: grid;
-    /* !!! add ONE 300px to the end of grid-template-row !!! */
-    grid-template-rows: 75px 300px 300px 300px;
+    grid-template-rows: 75px 300px 300px 300px 300px;
     grid-template-columns: 300px;
   }
-  #pinstagram500 {
+  #fourthRock {
     grid-row: 2 / span 1;
     grid-column: 1 / span 1;
-    background: url("images/pinstagram500.png");
-    background-size: cover;
-    background-position: center;
   }
   #exoplanet {
     grid-row: 3 / span 1;
     grid-column: 1 / span 1;
-    background: url("images/exoplanet.png");
-    background-size: cover;
   }
-  #simon {
+  #pinstagram500 {
     grid-row: 4 / span 1;
     grid-column: 1 / span 1;
-    background: url("images/simon.png");
-    background-size: cover;
   }
-  #comingsoon2 {
+  #simon {
     grid-row: 5 / span 1;
     grid-column: 1 / span 1;
-    border: 1px solid #f9f9f9;
   }
 }
